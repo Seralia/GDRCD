@@ -263,6 +263,7 @@ require 'header.inc.php'; /*Header comune*/
 
         gdrcd_query("CREATE TABLE messaggi (
             id bigint(20) NOT NULL auto_increment,
+            tipo int(4) NOT NUL default '0',
             mittente varchar(40) NOT NULL,
             destinatario varchar(20) NOT NULL default 'Nessuno',
             spedito datetime NOT NULL default '0000-00-00 00:00:00',
